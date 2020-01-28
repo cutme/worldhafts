@@ -147,6 +147,10 @@
     .o-cols {
         &__item {
             
+            &:first-of-type {
+                width: 900px;
+            }
+            
             &:last-of-type {
                 flex: 1;
                 padding-left: 60px;
