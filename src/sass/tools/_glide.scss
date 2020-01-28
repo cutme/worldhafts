@@ -1,0 +1,19 @@
+.glide {    
+    &__slides,
+    &__track {
+        height: 100%;
+    }
+
+    &__arrow {
+        @extend %anim;
+        width: 35px; height: 35px;
+        border: 2px solid $c-black-02;
+        border-radius: 50%;
+        background-color: white;
+        
+        &:hover {
+            background-color: $c-black-02;
+            color: white;
+        }
+    }
+}

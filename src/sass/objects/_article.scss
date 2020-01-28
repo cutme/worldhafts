@@ -1,0 +1,15 @@
+.o-article {
+    
+    h3 {
+        @extend %lead--third;
+        margin-bottom: .4em;
+        font-weight: $bold;
+    }
+    
+    p {
+        font: {
+            size: rem(18);
+            weight: $medium;
+        }
+    }
+}

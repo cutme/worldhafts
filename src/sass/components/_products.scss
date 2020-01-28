@@ -1,0 +1,34 @@
+.c-products {
+    padding-top: 100px;
+    
+    &__title {
+        @extend %rel;
+        font: {
+            family: $anton;
+            size: rem(317);
+            weight: $anton;
+        }
+        color: $c-gray-03;
+        
+        .page-title {
+            @extend %abs;
+            right: -20px; top: 0;
+            line-height: 1em;
+            transform: translateY(calc(-100% + 30px));
+        }
+        
+        @media ( max-width: $base + px ) {
+        	font-size: base(317);
+        }
+    }
+    
+    .o-header {
+        margin-bottom: 90px;
+    }
+    
+    .o-lead {
+        &--fourth { 
+            margin-bottom: 50px;
+        }
+    }
+}

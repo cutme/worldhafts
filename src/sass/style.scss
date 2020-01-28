@@ -1,0 +1,61 @@
+@import 'settings/colors.scss';
+@import 'settings/global.scss';
+
+@import 'tools/clear';
+@import 'tools/functions';
+@import 'tools/mixins';
+//@import 'tools/blazy';
+@import 'tools/custom-select';
+@import 'tools/glide';
+//@import 'tools/glightbox';
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+@import 'generic/screen-reader';
+
+@import 'elements/extends';
+@import 'elements/fonts';
+@import 'elements/form';
+@import 'elements/media';
+@import 'elements/page';
+@import 'elements/typography';
+
+@import 'objects/article';
+@import 'objects/box';
+@import 'objects/btn';
+@import 'objects/caption';
+@import 'objects/cols';
+@import 'objects/container';
+@import 'objects/hamburger';
+@import 'objects/header';
+@import 'objects/icons';
+@import 'objects/leads';
+@import 'objects/logo';
+@import 'objects/palette';
+@import 'objects/section';
+@import 'objects/sticker';
+@import 'objects/wrap';
+
+@import 'components/banners';
+@import 'components/bestsellers';
+@import 'components/breadcrumbs';
+@import 'components/collections';
+@import 'components/design';
+@import 'components/filters';
+@import 'components/footer';
+@import 'components/grid';
+@import 'components/homecarousel';
+@import 'components/lang';
+@import 'components/pagination';
+@import 'components/payhelp';
+@import 'components/product';
+@import 'components/recommended';
+@import 'components/nav';
+@import 'components/products';
+@import 'components/sales';
+@import 'components/salesdesign';
+@import 'components/social';
+@import 'components/tools';
+@import 'components/top';
+
+@import 'trumps/trumps';

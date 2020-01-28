@@ -1,0 +1,14 @@
+.c-salesdesign {
+    margin-bottom: 150px;
+
+    .o-wrap > .o-cols > .o-cols__item {
+        
+        &:first-of-type {
+            width: grid(1090);
+        }
+        
+        &:last-of-type {
+            flex: 1;
+        }
+    }
+}

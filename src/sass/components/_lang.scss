@@ -1,0 +1,20 @@
+.c-lang {
+    
+    .customSelect {
+        text-transform: uppercase;
+        
+        .custom-select-opener {
+            padding-left: 10px;
+            font-size: rem(14);            
+        }
+        
+        .custom-select-option {
+            text-transform: uppercase;
+        }
+        
+        &:after {
+            right: 10px;
+            top: 0;
+        }
+    }
+}

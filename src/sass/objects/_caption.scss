@@ -1,0 +1,53 @@
+.o-caption {
+    @extend %abs;
+    left: 0; bottom: 0;
+    padding: 0 70px 40px 70px;
+    color: white;
+    
+    @media ( min-width: $smartphone + 1px ) and ( max-width: $base + px ) {
+        padding: 0 base(70) 40px base(70);
+	}
+    
+    .first, .second, .o-buttons {
+        .glide & {
+            @extend %anim;
+            transition-duration: .6s;
+            opacity: 0;
+            transform: translate3d(-50px, 0, 0);
+        }
+    }
+
+    .first {
+        letter-spacing: -1px;
+        line-height: 1.4em;
+        font: {
+            size: rem(96);
+            weight: $black;
+        }
+    }
+    
+    .second {
+        font-size: rem(34);
+        
+        .glide & {
+            transition-delay: 250ms;
+        }
+    }
+    
+    .o-buttons {
+        padding-top: 35px;
+        
+        .glide & {
+            transition-delay: 450ms;
+        }
+
+        .o-btn {
+            min-width: 112px;
+            text-transform: uppercase;
+
+            &:not(:last-of-type) {
+                margin-right: 15px;
+            }
+        }
+    }
+}

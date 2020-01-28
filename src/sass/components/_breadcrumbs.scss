@@ -1,0 +1,33 @@
+.c-breadcrumbs {
+    margin-bottom: 30px;
+
+    ul {
+        @extend %flex;
+        
+        li {
+            @extend %rel;
+            margin: 0 15px;
+            
+            &:not(:last-of-type) {
+                &:after {
+                    @extend %abs-pseudo;
+                    @extend %abs-y;
+                    right: -20px;
+                    content: '•';
+                }
+            }
+            
+            &:first-child {
+                margin-left: 0;
+            }
+            
+            span {
+                font-weight: $bold;
+            }
+        }
+        
+        a {
+            text-decoration: underline;
+        }
+    }
+}

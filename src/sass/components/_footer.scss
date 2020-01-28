@@ -1,0 +1,50 @@
+.c-footer {
+    background-color: $c-black-02;
+    padding: {
+        top: 40px;
+        bottom: 40px;
+    }
+    color: $c-gray-02;
+    
+    &__nav {
+        width: 400px;
+        
+        ul {
+            @extend %flex;
+            @extend %flex-wrap;
+            
+            li {
+                width: 33%;
+                
+                a {
+                    font: {
+                        size: rem(13);
+                        weight: $bold;
+                    }
+                    
+                    &:hover {
+                        .desktop & {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .o-logo {
+        margin-right: 50px;
+    }
+    
+    .o-lead {
+        &--6 {
+            margin-right: 120px;
+            font-weight: $bold;
+        }
+    }
+    
+    .o-wrap {
+        @extend %flex;
+        @extend %flex-y;
+    }
+}

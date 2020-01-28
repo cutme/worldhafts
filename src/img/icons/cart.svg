@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="24.001" viewBox="0 0 17 24.001">
+  <g id="icon-cart-black" transform="translate(0 1)">
+    <g id="icon" transform="translate(0 6.561)" fill="rgba(255,255,255,0)" stroke="#010101" stroke-width="3">
+      <path d="M0,0H17a0,0,0,0,1,0,0V11.44a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M3,1.5H14A1.5,1.5,0,0,1,15.5,3v8.44a3.5,3.5,0,0,1-3.5,3.5H5a3.5,3.5,0,0,1-3.5-3.5V3A1.5,1.5,0,0,1,3,1.5Z" fill="none"/>
+    </g>
+    <path id="icon-2" data-name="icon" d="M2171.048,104.32V95.275a3.383,3.383,0,0,1,3.48-3.276h-.057a3.382,3.382,0,0,1,3.48,3.276v9.045" transform="translate(-2166 -91.999)" fill="rgba(255,255,255,0)" stroke="#010101" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+.o-header {
+    margin-bottom: 35px;
+    
+    .active-filters {
+        span {
+            @extend %rel;
+            display: inline-block;
+            margin: 0 15px;
+            
+            &:not(:last-of-type) {
+                &:after {
+                    @extend %abs-pseudo;
+                    @extend %abs-y;
+                    right: -30px;
+                    content: '•';
+                }
+            }
+            
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

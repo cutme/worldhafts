@@ -1,0 +1,66 @@
+<% include ./src/includes/head %>
+<body>
+
+<div class="o-container">
+    
+    <% include ./src/includes/top %>
+
+    <div class="c-product u-primarycolor--tshirt">
+        <div class="o-wrap o-wrap--narrow">
+            
+            <div class="o-cols">
+                <div class="o-cols__item">
+                    
+                    <div class="c-product__photo">
+                        <img src=<%= require("./img/photos/products/900x900/t-shirt-01.jpg") %> alt="t-shirt-01" width="900" height="900">
+                    </div>
+                    
+                    <% include ./src/includes/product__gallery %>
+                        
+                </div>
+                
+                <div class="o-cols__item">
+                    
+                    <div class="c-product__info">
+                        
+                        <div class="o-box o-box--big">
+                    	    <div class="o-box__row">
+                        	    <p class="name">T-Shirt Swith</p>
+                        	    <p class="category">Unisex lifestyle</p>
+                    	    </div>
+        
+                    	    <div class="o-box__row">
+                        	    <div>
+                            	    <p class="description">JB Grey - 8 colors</p>
+                        	    </div>
+                        	    <p class="price">
+                            	    <span class="text-color">19.99</span> PLN
+                                </p>
+                    	    </div>            	    
+                    	</div>
+                        
+                        <% include ./src/includes/product__colors %>
+                        <% include ./src/includes/product__sizes %>
+                        <% include ./src/includes/product__buttons %>
+                        <% include ./src/includes/product__design %>
+                        <% include ./src/includes/product__article %>
+
+                    </div>                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <% include ./src/includes/recommended-2 %>
+    <% include ./src/includes/banners--full %>
+    <% include ./src/includes/payhelp %>
+    <% include ./src/includes/footer %>
+
+</div>
+
+</body>
+</html>
+
+

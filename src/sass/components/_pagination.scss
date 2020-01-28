@@ -1,0 +1,67 @@
+.c-pagination {
+    @extend %flex;
+    @extend %flex-x;
+    margin-bottom: 120px;
+
+    ul {
+        @extend %flex;
+        @extend %flex-xy;
+    }
+    
+    li {
+        font: {
+            size: rem(18);
+            weight: $medium;
+        }
+        color: $c-gray-02;
+
+        a {
+            
+            @extend %anim;
+            
+            margin: 0 5px;
+            
+
+            &:hover {
+                .desktop & {
+                    color: $c-black-01;
+                }
+            }
+        }        
+        
+        &.is-active {
+            a {
+                text-decoration: underline;
+                color: $c-black-01;
+            }
+        }
+    }
+    
+    [class^="icon-"] {
+        @extend %flex;
+        @extend %flex-xy;
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border: 2px solid $c-black-02;
+        border-radius: 50%;
+        font-size: rem(12);
+
+        &:hover {
+            .desktop & {
+                background-color: $c-violet-01;
+                border-color: $c-violet-01;
+                color: white;
+            }
+        }
+        
+        &:first-of-type {
+            margin-right: 20px;
+        }
+        
+        &:last-of-type {
+            margin-left: 20px;
+        }
+    }
+}
+

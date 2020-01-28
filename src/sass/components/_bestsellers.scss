@@ -1,0 +1,28 @@
+.c-bestsellers {
+
+    .o-header {
+        margin-bottom: 35px;
+    }
+    
+    .glide {
+        &__arrows {
+            @extend %abs;
+            top: 0;
+            right: 0;
+            transform: translateY(calc(-100% - 30px));
+        }
+        
+        &__arrow {
+            &--right {
+                margin-left: 15px;
+            }
+        }
+    }
+    
+    .o-sticker {
+        
+    }
+
+
+    
+}

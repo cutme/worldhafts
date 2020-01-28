@@ -1,0 +1,11 @@
+.c-grid {
+    @extend %flex;
+    @extend %flex-wrap;
+    width: calc(100% + 20px);
+    margin: 0 -10px 70px -10px;
+    
+    &__item {
+        width: grid(600, $base + 20);
+        margin: 0 grid(10, $base + 20);
+    }
+}

@@ -1,0 +1,67 @@
+.c-filters {
+    padding-top: 5px;
+    
+    .o-btn {
+        text-transform: uppercase;
+        font-size: rem(11);
+    }
+
+    ul {
+        @extend %flex;
+        
+        li {
+            &:not(:last-of-type) {
+                margin-right: 30px;
+            }
+        }
+    }
+    
+    &__item {
+        cursor: pointer;
+        font: {
+            size: rem(16);
+            weight: $bold;
+        }
+        
+        i {
+            margin-left: 10px;
+            font-size: rem(12);
+            
+            &.icon-arrow-down {
+                font-size: rem(10);
+            }
+        }
+    }
+    
+/*
+    .customSelect {            
+        .custom-select-opener {
+            padding-left: 0;
+            padding-right: 40px;
+            background-color: white;
+            font: {
+                size: rem(16);
+                weight: $bold;
+            }
+            color: $c-black-02;
+        }
+        
+        &:after {
+            color: $c-black-02;
+        }
+    }
+    
+    .custom-select-panel {
+        //background-color: $c-black-02;
+        //box-shadow: 0 0 0 1px $c-black-01;
+    }
+    
+    .custom-select-option {            
+        &:hover, 
+        &.has-focus, 
+        &.is-selected.has-focus {
+            //background-color: $c-black-01;
+        }
+    }
+*/
+}

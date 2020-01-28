@@ -1,0 +1,15 @@
+.c-collections {
+    &__item {
+        @extend %rel;
+        margin-bottom: 95px;
+        
+        &:nth-child(even) {
+
+            .o-caption {
+                left: auto;
+                right: 0;
+                text-align: right;
+            }
+        }
+    }
+}

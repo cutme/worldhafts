@@ -1,0 +1,59 @@
+.c-social {
+    margin: 0 0 0 auto;
+    
+    ul {
+        @extend %flex;
+        @extend %flex-y;
+        margin-bottom: 15px;
+
+        li {
+            margin: 0 15px;
+            
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    .c-lang {
+        .customSelect {            
+            .custom-select-opener {
+                background-color: $c-black-02;
+                color: $c-gray-02;
+            }
+            
+            &:after {
+                color: $c-gray-02;
+            }
+        }
+        
+        .custom-select-panel {
+            background-color: $c-black-02;
+            box-shadow: 0 0 0 1px $c-black-01;
+        }
+        
+        .custom-select-option {            
+            &:hover, 
+            &.has-focus, 
+            &.is-selected.has-focus {
+                background-color: $c-black-01;
+            }
+        }
+    }
+    
+    .author {
+        text-align: right;
+        font: {
+            size: rem(13);
+            weight: $bold;
+        }
+        
+        a {
+            &:hover {
+                .desktop & {
+                    color: white;
+                }
+            }
+        }
+    }
+}

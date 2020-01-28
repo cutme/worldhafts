@@ -1,0 +1,105 @@
+.o-btn {
+    @extend %anim;
+    display: inline-flex;
+    @extend %flex-xy;
+    @extend %rel;
+    white-space: nowrap;
+    padding: 0 20px;
+    font-family: $text;
+    font-size: rem(16);
+    color: $c-black-01;
+    cursor: pointer;
+
+    
+    // Colors
+    
+    &--blackoutline {
+        border: 2px solid $c-black-02;
+        letter-spacing: 1px;
+    }
+    
+    &--grayoutline {
+        border: 2px solid $c-gray-02;
+        letter-spacing: 1px;
+        color: $c-gray-02 !important;
+    }
+    
+    &--orange {
+        background-color: $c-orange-01;
+        color: white;
+    }
+    
+    &--violet {
+        background-color: $c-violet-01;
+        color: white;
+    }
+    
+    &--white {
+        background-color: white;
+    }
+
+
+    // Size
+    
+    &--big {
+        height: 48px;
+        padding-bottom: 4px;
+        border-radius: 24px;
+        font-weight: $bold;
+    }
+    
+    &--small {
+        height: 32px;
+        border-radius: 16px;
+        padding-bottom: 2px;
+        font: {
+            size: rem(15);
+            weight: $medium;
+        }
+        color: $c-black-01;
+    }
+
+
+    span {
+        width: 100%;
+	}
+}
+
+a.o-btn,
+button.o-btn {
+    
+    &:hover {	        
+    	background-color: var(--primary-color);
+    	color: white;
+    	
+		&:after {
+			transform: translate3d(2px, -50%, 0);
+			color: white;
+		}
+    }
+    
+    &--grayoutline {        
+        &:hover {
+            background-color: $c-gray-02;
+            color: white !important;
+        }
+    }
+    
+    &--blackoutline {
+        &:hover {
+            background-color: $c-black-02 !important;
+            color: white !important;
+        }
+    }
+    
+    &--orange {
+        &:hover {
+            background-color: darken($c-orange-01, 5%) !important;
+        }
+    }
+    
+//    .desktop & {
+    
+        
+//    }
+}

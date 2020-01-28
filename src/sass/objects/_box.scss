@@ -1,0 +1,119 @@
+.o-box {
+    display: block;
+    margin-bottom: 50px;
+
+    strike {
+        margin-right: 10px;
+        opacity: .5;
+    }
+    
+    &__more {
+        @extend %abs;
+        @extend %anim;
+        @extend %flex;
+        @extend %flex-xy;
+        left: 0; bottom: 0;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;        
+        transform: translate3d(0, 100%, 0);
+    }
+
+    &__row {
+        @extend %flex;
+        @extend %flex-spacebetween;
+        @extend %flex-y;
+        padding: 2px 0;
+        
+        & > div {
+            @extend %flex;
+            @extend %flex-y;
+        }
+    }
+    
+    .category {
+        font-weight: $bold;
+        opacity: .5;
+    }
+    
+    .description,
+    .price {
+        font-weight: $medium;
+    }
+    
+    .name {
+        font-weight: $bold;
+    }
+
+    .picture {
+        @extend %rel;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .price {
+        text-transform: uppercase;
+    }
+    
+    &:hover {
+        .o-box {
+            &__more {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+    
+    &--big {
+        max-width: 600px;
+        
+        .o-box__more {
+            height: 58px;
+            padding-bottom: 3px;
+            letter-spacing: 2px;            
+            letter-spacing: 2px;
+            font-weight: $bold;
+        }
+        
+        .o-sticker {
+            top: 40px; right: 40px;
+        }
+        
+        .category {
+            @extend %lead--sixth;
+        }
+        
+        .description, .price {
+            @extend %lead--fourth;
+        }
+    
+        .name {
+            @extend %lead--second;
+        }
+    }
+    
+    &--medium {
+        max-width: 330px;
+        
+        .o-box__more {
+            height: 48px;
+            letter-spacing: 1px;
+            font-weight: $medium;
+        }
+        
+        .o-sticker {
+            top: 25px; right: 25px;
+        }
+
+        .category {
+            @extend %lead--sixth;
+        }
+        
+        .description {
+            @extend %lead--sixth;
+        }
+    
+        .name, .price {
+            @extend %lead--fourth;
+        }
+    }
+}

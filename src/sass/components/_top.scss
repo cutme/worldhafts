@@ -1,0 +1,16 @@
+.c-top {
+	@extend %rel;
+	@include z-index(top);
+    height: 100px;
+	 
+    .o-logo {
+        transform: translate3d(0, 30%, 0);
+    } 
+	 
+	 .o-wrap {
+    	 @extend %flex;
+    	 @extend %flex-spacebetween;
+         @extend %flex-y;
+    	 height: 100%;
+	 }
+}

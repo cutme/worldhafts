@@ -1,0 +1,70 @@
+<% include ./src/includes/head %>
+<body>
+
+    <% include ./src/includes/top %>
+
+    <div class="o-wrap">
+        <ul class="c-collections">
+            <li class="c-collections__item">
+                <article class="o-caption">
+                    <p class="first">Title about collection</p>
+                    <p class="second">Maecenas mattis lectus at ligula rutrum.</p>
+                    
+                    <section class="o-buttons">
+                        <a href="man.html" class="o-btn o-btn--big o-btn--white">Man</a>
+                        <a href="kids.html" class="o-btn o-btn--big o-btn--white">Kids</a>
+                    </section>
+                </article>
+
+                <img src=<%= require("./img/photos/collections/01.jpg") %> alt="" width="1840" height="825">
+            </li>
+
+            <li class="c-collections__item anim anim--up">
+                <header class="o-header">
+                	<h2 class="o-lead o-lead--first">Woman's letters collection</h2>
+                	<h5 class="o-lead o-lead--fourth">Caps 32</h5>
+            	</header>
+            	
+                <article class="o-caption anim anim--right">
+                    <p class="first">Title about caps</p>
+                    <p class="second">Maecenas mattis lectus at ligula rutrum.</p>
+                    
+                    <section class="o-buttons">
+                        <a href="man.html" class="o-btn o-btn--big o-btn--white">woman</a>
+                        <a href="kids.html" class="o-btn o-btn--big o-btn--white">Kids</a>
+                    </section>
+                </article>
+
+                <img src=<%= require("./img/photos/collections/02.jpg") %> alt="" width="1840" height="825">
+            </li>
+            
+            <li class="c-collections__item anim anim--up">
+                <header class="o-header">
+                	<h2 class="o-lead o-lead--first">Letters collection</h2>
+                	<h5 class="o-lead o-lead--fourth">Caps 32</h5>
+            	</header>
+            	
+                <article class="o-caption anim anim--left">
+                    <p class="first">Title about caps</p>
+                    <p class="second">Maecenas mattis lectus at ligula rutrum.</p>
+                    
+                    <section class="o-buttons">
+                        <a href="man.html" class="o-btn o-btn--big o-btn--white">Man</a>
+                        <a href="kids.html" class="o-btn o-btn--big o-btn--white">Kids</a>
+                    </section>
+                </article>
+
+                <img src=<%= require("./img/photos/collections/03.jpg") %> alt="" width="1840" height="825">
+            </li>
+        </ul>
+    </div>
+
+    <% include ./src/includes/salesdesign %>
+    <% include ./src/includes/payhelp %>
+    <% include ./src/includes/footer %>
+
+
+</body>
+</html>
+
+

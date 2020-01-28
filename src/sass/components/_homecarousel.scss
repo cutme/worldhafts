@@ -1,0 +1,56 @@
+.c-homecarousel {
+    @include z-index(homecarousel);
+	height: 100%;
+	margin-bottom: 50px;
+
+	.glide {
+		height: 100%;
+		
+		&__arrow {
+    		@extend %abs;
+    		@extend %abs-y;
+    		width: 55px; height: 55px;
+    		font-size: rem(14);
+    		
+    		&--left {
+        		left: 40px;
+        		transform: translate3d(-50%, -50%, 0);
+    		}
+    		
+    		&--right {
+        		right: 40px;
+        		transform: translate3d(50%, -50%, 0);
+    		}
+		}
+		
+		&__slide {
+    		@extend %rel;
+    		
+            &--black {
+                article {
+                    color: $c-black-02;
+                }
+                
+                .o-btn {
+                    background-color: $c-black-02;
+                    color: white;
+                }
+            }
+            
+            &--active {
+                .first, .second, .o-buttons {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+		}	
+		
+		&__slide {
+            
+        }	
+	}
+     
+    .o-wrap {
+        @extend %rel;
+    }
+}

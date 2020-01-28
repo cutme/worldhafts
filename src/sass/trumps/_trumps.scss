@@ -1,0 +1,218 @@
+html:not(.ie) {
+    .is-loaded {
+        .anim {
+            &--delay1 {
+                transition-delay: 150ms;
+            }
+            
+            &--delay2 {
+                transition-delay: 250ms;
+            }
+            
+            &--delay3 {
+                transition-delay: 350ms;
+            }
+            
+            &--delay4 {
+                transition-delay: 450ms;
+            }
+    
+            transition: all 600ms ease-out;
+            opacity: 0;
+            
+            
+            
+            &--left {
+                transform: translate3d(-50px, 0, 0);
+            }
+            
+            &--right {
+                transform: translate3d(50px, 0, 0);
+            }
+            
+            &--scale {
+                transform: scale3d(0, 1, 1);
+            }
+            
+            &--up {
+                transform: translate3d(0, 50px, 0);
+            }
+            
+            &--visible {
+                transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+.is-hidden {
+    display: none;
+}
+
+
+
+// Text
+
+.aligncenter {
+    text-align: center;
+}
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.u-cover {
+    transition: all 500ms ease-out;
+    opacity: 1;
+    
+    .is-loaded & {
+        opacity: 0;
+    }
+}
+
+
+// Backgrounds
+
+.bg-gray {
+}
+
+
+
+.u-primarycolor {
+
+    &--cap {
+        
+        .c-product {
+            &__colors {
+                label {
+                    &:after {
+                        box-shadow: inset 0 0 0 2px $c-cap;
+                    }
+                }
+            }
+            
+            &__design {
+                i {
+                    color: $c-cap;
+                }
+            }
+            
+            &__sizes {
+                input[type=radio] {
+                    &:checked {
+                        & + label {
+                            i {
+                                border-color: $c-cap;
+                                color: $c-cap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .o-btn {
+            &:hover {
+                .desktop & {
+                    background-color: $c-cap;
+                    color: white;
+                }
+            }
+        }
+        
+        .bg-color {
+            background-color: $c-cap;
+            color: white;
+        }
+        
+        .text-color {
+            color: $c-cap;
+        }
+        
+        .glide {
+            &__arrow {
+                &:hover {
+                    .desktop & {
+                        background-color: $c-cap;
+                        border-color: $c-cap;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
+    &--tshirt {
+        
+        .c-product {
+            &__colors {
+                label {
+                    &:after {
+                        box-shadow: inset 0 0 0 2px $c-tshirt;
+                    }
+                }
+            }
+            
+            &__design {
+                i {
+                    color: $c-tshirt;
+                }
+                
+                &:hover {
+                    .desktop & {
+                        color: $c-tshirt;
+                    }
+                }
+            }
+            
+            &__sizes {
+                input[type=radio] {
+                    &:checked {
+                        & + label {
+                            i {
+                                border-color: $c-tshirt;
+                                color: $c-tshirt;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .o-btn {
+            &:hover {
+                .desktop & {
+                    background-color: $c-orange-01;
+                    color: white;
+                }
+            }
+        }
+        
+        .bg-color {
+            background-color: $c-orange-01;
+            color: white;
+        }
+        
+        .text-color {
+            color: $c-orange-01;
+        }
+        
+        .glide {
+            &__arrow {
+                &:hover {
+                    .desktop & {
+                        background-color: $c-orange-01;
+                        border-color: $c-orange-01;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

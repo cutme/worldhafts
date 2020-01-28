@@ -1,0 +1,54 @@
+.c-payhelp {
+
+    &__payments {
+        @extend %flex;
+        @extend %flex-y;
+
+        p {
+            font: {
+                size: rem(24);
+                weight: $bold;
+            }
+        }
+        
+        ul {
+            @extend %flex;
+            @extend %flex-y;
+            
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+    
+    &__help {
+        @extend %flex;
+        @extend %flex-y;
+        transform: translateY(20px);
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        
+        [class^="icon-"] {
+            @extend %flex;
+            @extend %flex-xy;
+            width: 105px; height: 105px;
+            background-color: $c-black-02;
+            border-radius: 50%;
+            border: 3px solid white;
+            font-size: rem(40);
+            color: white;
+        }
+        
+        p {
+            margin-right: 20px;
+            font: {
+                size: rem(13);
+                weight: $bold;
+            }
+        }
+    }
+    
+    .o-wrap {
+        @extend %flex;
+    }
+}

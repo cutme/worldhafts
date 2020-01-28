@@ -1,0 +1,59 @@
+.c-banners {
+    margin-bottom: 110px;
+    
+    &--full {
+        .c-banners__item {
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__item {
+        @extend %rel;
+        color: white;
+        
+        article {
+            @extend %abs;
+            @extend %flex;
+            @extend %flex-x;
+            flex-direction: column;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            padding-left: 30px;
+        }
+    }
+    
+    .o-buttons {
+        padding-top: 20px;
+        
+        .o-btn {
+            &:not(:last-of-type) {
+                margin-right: 5px;
+            }
+        }
+    }
+    
+    .o-cols {
+        width: calc(100% + 28px);
+        margin: 0 -14px;
+        
+        &__item {
+            margin: 0 14px;
+        }
+    }
+    
+    .first {
+        font: {
+            family: $anton;
+            size: rem(53);
+        }
+    }
+    
+    .second {
+        font: {
+            size: rem(13);
+            weight: $medium;
+        }
+    }
+}

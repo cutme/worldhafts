@@ -1,0 +1,51 @@
+// Fonts
+
+$anton:             'Anton', sans-serif;
+$icomoon:           'icomoon';
+$lato:		        'Lato', sans-serif;
+$text:		        $lato;
+
+
+
+
+// Font weights
+
+$regular:           400;
+$medium:            500;
+$bold:              700;
+$black:             900;
+
+
+$z-index: (
+    hamburger:      100,
+    header:         30,
+    homecarousel:   30,
+	top           : 40,
+	nav           : 50,
+	logo          : 60
+);
+
+// Paths
+
+$path_img:          '../img';
+$path_fonts:        '../fonts';
+
+
+
+// Default
+
+$base-font-size:	16;
+$base:				1840;
+$base_narrow:		1350;
+
+
+// RWD
+
+$desktop-1:            1600;
+$desktop-2:            1440;
+$desktop-3:            1280;
+
+$tablet:               1024;
+$tablet_portrait:       768;
+$smartphone:			640;
+$smartphone_portrait:	500;

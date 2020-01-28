@@ -1,0 +1,25 @@
+.o-lead {
+    &--first {
+        @extend %lead--first;
+    }
+    
+    &--second {
+        @extend %lead--second;
+    }
+    
+    &--third {
+        @extend %lead--third;
+    }
+    
+    &--fourth {
+        @extend %lead--fourth;
+    }
+    
+    &--fifth {
+        @extend %lead--fifth;
+    }
+    
+    &--sixth {
+        @extend %lead--sixth;
+    }
+}

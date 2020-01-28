@@ -1,0 +1,88 @@
+.c-nav {
+    @extend %flex;
+    @extend %flex-column;
+    @extend %flex-end;
+    padding-top: 4px;
+    
+    a {
+        white-space: nowrap;
+        font-weight: $bold;
+        opacity: .5;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+    &__menu {
+        @extend %flex;
+        padding: 5px 0;
+        
+        & > li {
+            @extend %rel;
+            margin: 0 15px;
+
+            a {
+                display: block;
+                padding: 5px 0;
+            }
+            
+            &.current-menu-item {
+                // Submenu 
+                
+                & > ul {
+                    @extend %abs;
+                    z-index: -1;
+                    left: -15px; top: 0;
+                    background-color: white;
+                    padding: 20px 0 10px 0;
+                    
+                    opacity: 0;
+                    overflow: hidden;
+                    pointer-events: none;
+                    transform-origin: 50% 0;
+                    transform: scale(0.75) translateY(-10px);
+                    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    
+                    li {
+                        a {
+                            opacity: .5;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    & > ul {
+                        opacity: 1;
+                        pointer-events: auto;
+                        transform: scale(1) translateY(20px);
+                    }
+                }
+            }
+        }
+    }
+    
+    &__user {
+        @extend %flex;
+        @extend %flex-y;
+        
+        & > li {
+            margin: 0 15px;
+            
+            & > a {
+                font-size: rem(14);
+            }
+        }
+    }
+    
+    .current-menu-item {
+        & > a {
+            opacity: 1;
+        }
+    }
+    
+    [class^="icon-"] {
+        opacity: 1;
+    }
+}

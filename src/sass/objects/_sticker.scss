@@ -1,0 +1,8 @@
+.o-sticker {
+    @extend %abs;
+
+    .icon-heart {
+        font-size: rem(24);
+        cursor: pointer;
+    }   
+}
